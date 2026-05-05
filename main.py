@@ -20,7 +20,7 @@ def delete_note():
 def update_note():
     pass
 
-# add_note()
+add_note()
 # delete_note()
 # update_note()
 show_notes()
