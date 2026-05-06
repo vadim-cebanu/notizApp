@@ -15,12 +15,19 @@ def add_note():
     print(f"The note {new_note} is added!")
 
 def delete_note():
-    pass 
+    title = input("title to remove: ")
+    for note in notes:
+        if note ["title"] == title:
+            notes.remove(note)
+            print(f"The note '{title}' was removed!")
+        else:
+            print(f"This note is missing. ")
+    
 
 def update_note():
     pass
 
-add_note()
-# delete_note()
-# update_note()
+#add_note()
+delete_note()
+#update_note()
 show_notes()
