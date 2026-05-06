@@ -32,7 +32,23 @@ def update_note():
             note["text"] = input("New text: ")
             print("Note updated!!!")
 
-#add_note()
-#delete_note()
-update_note()
-show_notes()
+while True:
+    print("\n     MENU      ")
+    print("1. Show notes")
+    print("2. Add notes")
+    print("3. Delete notes")
+    print("4. Update notes")
+    print("5. Exit")
+
+    choise = input("Choose option: ")
+    
+    if choise == "1":
+        show_notes()
+    elif choise == "2":
+        add_note()
+    elif choise == "3":
+        delete_note()
+    elif choise == "4":
+        update_note()
+    elif choise == "5":
+        break
