@@ -25,9 +25,14 @@ def delete_note():
     
 
 def update_note():
-    pass
+    title = input("Which note to edit?: ")
+    for note in notes:
+        if note["title"] == title:
+            note["title"] = input("New title: ")
+            note["text"] = input("New text: ")
+            print("Note updated!!!")
 
 #add_note()
-delete_note()
-#update_note()
+#delete_note()
+update_note()
 show_notes()
